@@ -1,0 +1,92 @@
+/* editJob.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.form {
+  margin-top: 30rpx;
+}
+
+.form-item {
+  margin-bottom: 30rpx;
+}
+
+.form-item text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 6rpx;
+  font-size: 28rpx;
+}
+
+textarea {
+  height: 150rpx;
+  resize: none;
+}
+
+.checkbox-group {
+  padding: 15rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 6rpx;
+  font-size: 28rpx;
+}
+
+.checkbox-group label {
+  margin-right: 20rpx;
+}
+
+.add {
+  background-color: #291a11;
+  color: white;
+  border-radius: 36rpx;
+  height: 80rpx;  /* 调整按钮高度 */
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+  font-size: 28rpx;   /* 字体变小 */
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;  /* 垂直居中 */
+  font-size: 28rpx;      /* 设置文字大小 */
+  margin-top: 12rpx;  /* 设置每个checkbox项之间的间距 */
+}
+
+.checkbox-item checkbox {
+  margin-right: 8rpx;   /* 增加checkbox和文字之间的间距 */
+  transform: scale(0.75);  /* 缩小checkbox勾选框 */
+}
+
+.checkbox-item text {
+  line-height: 28rpx;     /* 设置行高，确保文字垂直居中 */
+}
+
+.submit-btn {
+  margin-top: 40rpx;
+  padding: 20rpx;
+  background-color: #28a745;
+  color: white;
+  font-size: 30rpx;
+  border-radius: 6rpx;
+  width: 100%;
+}
+
+.add-subject {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.add-subject input {
+  flex: 1;
+  padding: 10rpx;
+  margin-right: 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 6rpx;
+  font-size: 28rpx;   /* 字体变小 */
+}

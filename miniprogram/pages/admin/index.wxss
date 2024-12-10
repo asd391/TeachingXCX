@@ -1,0 +1,103 @@
+.container {
+  padding: 20rpx;
+}
+
+.job-list {
+  margin-top: 20rpx;
+}
+
+.job-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 6rpx;
+  margin-bottom: 20rpx;
+}
+
+.job-item-left {
+  flex: 1;
+  padding-right: 20rpx;
+}
+
+.job-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job-item-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.job-item-date, .job-item-description, .job-item-salary, .job-item-time, .job-item-req,.job-item-subject,.job-item-address,
+.job-item-ageRequirement,
+.job-item-contactwx {
+  font-size: 28rpx;
+  color: #555;
+  margin-bottom: 10rpx;
+}
+
+.job-item-title text{
+  display: block;
+  font-size: 40rpx;
+}
+
+.job-item-date text,
+.job-item-description text,
+.job-item-salary text,
+.job-item-time text,
+.job-item-req text ,
+.job-item-subject text,
+.job-item-address text,
+.job-item-ageRequirement text,
+.job-item-contactwx text{
+  display: block;
+  margin-top: 10rpx;
+  font-size:30rpx;
+}
+
+.edit-btn, .delete-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  line-height: 100rpx;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #FF4C4C;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  opacity: 0.8;
+}
+
+.add-btn-container {
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+  z-index: 999;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 36rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-btn:hover {
+  background-color: #218838;
+  opacity: 0.9;
+}

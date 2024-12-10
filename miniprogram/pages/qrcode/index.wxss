@@ -1,0 +1,13 @@
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.qrcode-image {
+  width: 100%;
+  max-width: 300px;  /* 限制二维码图片的最大宽度 */
+
+}

@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="job-list">
+    <block wx:for="{{jobList}}" wx:key="index">
+      <view class="job-item">
+        <!-- 左侧数据展示 -->
+        <view class="job-item-left">
+          <view class="job-item-title">
+            <text>{{item.id}}:{{item.jobTitle}}</text>
+          </view>
+          <view class="job-item-date">
+            <text>创建时间：{{item.creationDate}}</text>
+          </view>
+          <view class="job-item-address">
+            <text>地址：{{item.address}}</text>
+          </view>
+          <view class="job-item-ageRequirement">
+            <text>年龄：{{item.ageRequirement}}</text>
+          </view>
+          <view class="job-item-subject">
+            <text>科目：{{item.subject}}</text>
+          </view>
+          <view class="job-item-salary">
+            <text>薪资：{{item.salary}}</text>
+          </view>
+          <view class="job-item-time">
+            <text>时间：{{item.time}}</text>
+          </view>
+          <view class="job-item-description">
+            <text>备注：{{item.jobDetails}}</text>
+          </view>
+          <!-- 新增字段展示 -->
+          <view class="job-item-contactwx">
+            <text>联系微信：{{item.contactwx}}</text>
+          </view>
+        </view>
+
+        <!-- 右侧按钮 -->
+        <view class="job-item-right">
+          <button style="width:80rpx" class="edit-btn" bindtap="onEditJob" data-id="{{item.id}}" style="width: 120rpx;height: 100rpx;">编辑</button>
+          <button style="width:80rpx" class="delete-btn" bindtap="onDeleteJob" data-id="{{item.id}}" style="width: 120rpx;height: 100rpx;">删除</button>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="add-btn-container">
+    <button style="width:240rpx" class="add-btn" bindtap="onAddJob">添加工作</button>
+  </view>
+</view>

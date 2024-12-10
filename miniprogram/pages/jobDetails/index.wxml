@@ -1,0 +1,49 @@
+<view class="fixed-tip">
+    <text>Tips：长按可复制具体信息</text>
+  </view>
+<view class="job-list">
+  <block wx:for="{{jobs}}" wx:key="id">
+    <view class="job-detail" bindlongtap="onLongTap" data-item="{{item}}">
+      <!-- 标题部分 -->
+      <view class="job-title" data-info="{{item.jobTitle}}">
+        <text>{{item.id}}:</text>
+        <text>{{item.jobTitle}}</text>
+      </view>
+
+      <!-- 详细信息部分 -->
+      <view class="job-info">
+        <view class="info-item">
+          <text class="label">学生阶段：</text>
+          <text>{{item.ageRequirement}}</text>
+        </view>
+
+        <view class="info-item">
+          <text class="label">科目：</text>
+          <text>{{item.subject}}</text>
+        </view>
+
+        <view class="info-item">
+          <text class="label">薪资：</text>
+          <text>{{item.salary}}/小时</text>
+        </view>
+
+        <view class="info-item">
+          <text class="label">时间：</text>
+          <text>{{item.time}}</text>
+        </view>
+
+        <!-- 备注信息 -->
+        <view class="info-item">
+          <text class="label">备注：</text>
+          <text data-info="{{item.jobDetails}}">{{item.jobDetails}}</text>
+        </view>
+      </view>
+
+      <!-- 联系微信部分 -->
+      <view class="contact-info" data-info="{{item.contactwx}}">
+        <text class="label">联系微信：</text>
+        <text>{{item.contactwx}}</text>
+      </view>
+    </view>
+  </block>
+</view>

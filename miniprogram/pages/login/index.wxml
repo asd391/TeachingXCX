@@ -1,0 +1,19 @@
+<view class="container">
+  <view class='title'>欢迎来到家教小程序！</view>
+  <view class='info'>您可以在工作列表找寻合适的工作</view>
+  <view class="info">请注意格式的要求哦^-^</view>
+  <button class='btn' bindtap="onLogin" loading="{{loading}}" style="width: 400rpx;">点击登录</button>
+</view>
+
+<view class="admin-button" bindtap="onAdminButtonClick">
+  <text>管理端</text>
+</view>
+
+<view wx:if="{{showPasswordModal}}" class="password-modal">
+  <view class="password-modal-content">
+    <text>请输入密码</text>
+    <input type="password" bindinput="onPasswordInput" placeholder="请输入管理端密码" />
+    <button bindtap="submitPassword" style="width:180rpx">提交</button>
+    <button bindtap="closePasswordModal" style="width:180rpx">取消</button>
+  </view>
+</view>

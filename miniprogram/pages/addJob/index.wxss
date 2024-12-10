@@ -1,0 +1,91 @@
+.container {
+  padding: 20rpx;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-item {
+  margin-bottom: 30rpx;
+}
+
+.form-item text {
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+
+.form-item input,
+.form-item textarea {
+  width: 90%;
+  padding: 15rpx;
+  border-radius: 8rpx;
+  border: 1px solid #ccc;
+  font-size: 28rpx;
+}
+
+.form-item textarea {
+  height: 120rpx;
+  resize: none;
+}
+
+.add-subject {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.add-subject input {
+  width: 180rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  padding: 10rpx;
+  border: 1px solid #ccc;
+  border-radius: 8rpx;
+}
+
+.add-subject button {
+  background-color: #291a11;
+  color: white;
+  border-radius: 36rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.submit-btn {
+  margin-left: 15rpx;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5rpx 20rpx;
+  border-radius: 8rpx;
+  height: 92rpx;
+  font-size: 36rpx;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;  /* 垂直居中 */
+  font-size: 28rpx;      /* 设置文字大小 */
+  margin-top: 12rpx;  /* 设置每个checkbox项之间的间距 */
+}
+
+.checkbox-item checkbox {
+  margin-right: 8rpx;   /* 增加checkbox和文字之间的间距 */
+  transform: scale(0.75);  /* 缩小checkbox勾选框 */
+}
+
+.checkbox-item text {
+  line-height: 28rpx;     /* 设置行高，确保文字垂直居中 */
+}
+
+.picker {
+  padding: 15rpx;
+  border-radius: 8rpx;
+  border: 1px solid #ccc;
+  font-size: 28rpx;
+  width: 90%;
+  height: 52rpx;
+}

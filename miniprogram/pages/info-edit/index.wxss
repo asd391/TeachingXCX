@@ -1,0 +1,77 @@
+.container {
+  padding: 30rpx;  /* 减小外边距 */
+}
+
+.input-group {
+  margin-bottom: 30rpx;  /* 输入框组之间的间距 */
+}
+
+input, textarea {
+  padding: 12rpx;  /* 减小内边距 */
+  margin-top: 8rpx;
+  border: 1rpx solid #ccc;  /* 边框 */
+  border-radius: 6rpx;  /* 圆角 */
+  font-size: 28rpx;   /* 字体变小 */
+}
+
+textarea {
+  height: 120rpx;  /* 设置文本框高度 */
+}
+
+.picker {
+  padding: 12rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 6rpx;
+  font-size: 28rpx;   /* 字体变小 */
+}
+
+.add-subject {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.add-subject input {
+  flex: 1;
+  padding: 10rpx;
+  margin-right: 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 6rpx;
+  font-size: 28rpx;   /* 字体变小 */
+}
+
+.submit {
+  padding: 15rpx;
+  background-color: #28a745;
+  color: white;
+  border-radius: 6rpx;
+  width: 100%;
+  margin-top: 40rpx;
+  font-size: 30rpx;    /* 字体变小 */
+}
+
+.add {
+  background-color: #291a11;
+  color: white;
+  border-radius: 36rpx;
+  height: 80rpx;  /* 调整按钮高度 */
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+  font-size: 28rpx;   /* 字体变小 */
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;  /* 垂直居中 */
+  font-size: 28rpx;      /* 设置文字大小 */
+  margin-top: 12rpx;  /* 设置每个checkbox项之间的间距 */
+}
+
+.checkbox-item checkbox {
+  margin-right: 8rpx;   /* 增加checkbox和文字之间的间距 */
+  transform: scale(0.75);  /* 缩小checkbox勾选框 */
+}
+
+.checkbox-item text {
+  line-height: 28rpx;     /* 设置行高，确保文字垂直居中 */
+}

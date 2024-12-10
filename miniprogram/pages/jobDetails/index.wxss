@@ -1,0 +1,50 @@
+.job-list {
+  padding: 20px;
+}
+
+.job-detail {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.job-info {
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fixed-tip {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff9800; /* 橙色背景 */
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+
+.label {
+  font-weight: bold;
+  width: 200rpx;
+  color: #333;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: #007aff;
+}

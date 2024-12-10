@@ -1,0 +1,83 @@
+<view class="container">
+  <view class="form">
+    <!-- 目标地址 -->
+    <view class="form-item">
+      <text class="label">目标地址 \n 例子：南开区</text>
+      <input type="text" placeholder="请输入目标地址" value="{{selectedAddress}}" bindinput="onAddressInput" />
+    </view>
+    <!-- 年级 -->
+    <view class="form-item">
+      <text class="label">目标年级</text>
+      <view class="checkbox-group">
+        <checkbox-group bindchange="onGradeChange">
+          <label class="checkbox-item" wx:for="{{gradeOptions}}" wx:key="index">
+            <checkbox value="{{item}}" checked="{{selectedGrades[item]}}" style="transform: scale(0.75);"/>{{item}}
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+
+    <!-- 科目 -->
+    <view class="form-item">
+      <text class="label">期望科目</text>
+      <view class="checkbox-group">
+        <checkbox-group bindchange="onSubjectChange">
+          <label class="checkbox-item" wx:for="{{subjectOptions}}" wx:key="index">
+            <checkbox value="{{item}}" checked="{{selectedSubjects[item]}}" style="transform: scale(0.75);"/>{{item}}
+          </label>
+        </checkbox-group>
+        <button class="add-subject-btn" bindtap="onShowSubjectDialog">添加科目</button>
+      </view>
+      <!-- 添加科目按钮 -->
+    </view>
+
+    <!-- 性别 -->
+    <view class="form-item">
+      <text class="label">目标性别</text>
+      <picker mode="selector" range="{{genderOptions}}" bindchange="onGenderChange">
+        <view class="picker">
+          <text>{{selectedGender || '不限'}}</text>
+        </view>
+      </picker>
+    </view>
+
+    <!-- 时间 -->
+    <view class="form-item">
+      <text class="label">期望时间 \n 例子：周六 周日</text>
+      <input type="text" placeholder="请输入时间" value="{{selectedTime }}" bindinput="onTimeInput" />
+    </view>
+
+    <!-- 薪资 -->
+    <view class="form-item">
+      <text class="label">期望薪资(h) \n 例子：80-100</text>
+      <input type="text" placeholder="请输入薪资" value="{{salary}}" bindinput="onSalaryInput" />
+    </view>
+
+    <!-- 授课方式 -->
+    <view class="form-item">
+      <text class="label">授课方式</text>
+      <picker mode="selector" range="{{teachingMethods}}" bindchange="onTeachingMethodChange">
+        <view class="picker">
+          <text>{{selectedTeachingMethod || '不限'}}</text>
+        </view>
+      </picker>
+    </view>
+
+    <!-- 提交按钮 -->
+    <button class="submit-btn" bindtap="onSubmit">搜索</button>
+  </view>
+
+
+
+  <!-- 弹出框 -->
+  <view class="dialog" wx:if="{{showDialog}}">
+    <view class="dialog-content">
+      <text class="dialog-title">请输入新科目</text>
+      <input class="dialog-input" placeholder="新科目名称" value="{{newSubject}}" bindinput="onNewSubjectInput" />
+      <view class="dialog-buttons">
+        <button class="dialog-btn" bindtap="onAddSubject" style="width: 160rpx;height: 80rpx;">确认</button>
+        <button class="dialog-btn" bindtap="onHideDialog" style="width: 160rpx;height: 80rpx;">取消</button>
+      </view>
+    </view>
+  </view>
+</view>

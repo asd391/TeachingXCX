@@ -1,0 +1,44 @@
+<view class="container">
+  <!-- 昵称 -->
+  <view class="input-group">
+    <text>昵称</text>
+    <input type="text" placeholder="请输入昵称" bindinput="onNicknameInput" value="{{nickname}}" />
+  </view>
+
+  <!-- 期望家教年龄段 -->
+  <view class="input-group">
+    <text>期望家教年龄段（必填）</text>
+    <checkbox-group bindchange="onAgeRangeChange">
+      <label class="checkbox-item" wx:for="{{ageRangeOptions}}" wx:key="index">
+        <checkbox value="{{item}}" checked="{{ageChecked[item]}}"/> {{item}}
+      </label>
+    </checkbox-group>
+  </view>
+
+  <!-- 期望家教科目 -->
+  <view class="input-group">
+    <text>期望家教科目（必填）</text>
+    <checkbox-group bindchange="onSubjectChange">
+      <label class="checkbox-item" wx:for="{{subjectOptions}}" wx:key="index">
+        <checkbox value="{{item}}" checked="{{subjectChecked[item]}}"/> {{item}}
+      </label>
+    </checkbox-group>
+
+    <!-- 输入框允许添加新的科目 -->
+    <view class="add-subject">
+      <input type="text" placeholder="添加科目" bindinput="onNewSubjectInput" value="{{newSubject}}" />
+      <button bindtap="onAddSubject" class='add'>添加</button>
+    </view>
+  </view>
+
+  <!-- 个人介绍 -->
+  <view class="input-group">
+    <text>个人介绍（非必填）</text>
+    <textarea placeholder="请输入个人介绍" bindinput="onIntroductionInput" value="{{introduction}}" />
+  </view>
+
+
+
+  <!-- 提交按钮 -->
+  <button bindtap="onSubmit" class='submit'>提交</button>
+</view>
