@@ -3,7 +3,7 @@ Page({
     loading: false,
     showPasswordModal: false,  // 控制密码输入框是否显示
     passwordInput: '',         // 存储用户输入的密码
-    correctPassword: 'UMVCd5UPjHOWJrsCAzO8',
+    correctPassword: 'aaaaaa',
   },
 
   onAdminButtonClick() {
